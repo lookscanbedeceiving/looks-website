@@ -1,0 +1,174 @@
+*,
+::before,
+::after {
+ box-sizing: border-box;
+}
+
+
+body {
+ position: relative;
+ margin: 0;
+ overflow: hidden;
+ display: flex;
+ height: 100vh;
+ flex-direction: column;
+ line-height: 1.5;
+ font-family: 'Arima', sans-serif;
+ font-size: 62.5%;
+ color: #f4f4f4;
+ background-color: #1d1e22;
+}
+
+.scrolls {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ right: 1.25em;
+ z-index: 2;
+ display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 2rem;
+color: #f4f4f4;
+}
+
+.scrolls .center {
+ font-size: 0.825rem;
+}
+
+.smooth {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ scroll-behavior: smooth;
+overflow-y: scroll; 
+scroll-snap-type: mandatory;
+scroll-snap-points-y: repeat(100vh);
+scroll-snap-type: y mandatory;
+}
+
+.header {
+position: fixed;
+justify-content: center;
+top: 0;
+z-index: 1;
+display: flex;
+width: 100%;
+min-height: 80px;
+font-size: 1rem;
+background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34), transparent);
+mix-blend-mode: luminosity;
+}
+
+.header ul {
+ margin: 0 1em; 
+ padding: 1em;
+ list-style-type: none;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+}
+
+.header ul li a {
+ position: relative;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: 600;
+ color: #f4f4f4;
+ padding: 0 20px;
+}
+
+.header ul li a::after {
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+ content: "";
+ width: 0;
+ height: 3px;
+ transition: all 0.4s linear;
+}
+
+.header ul li a:hover::after {
+ width: 100%;
+ background-color: #f4f4f4;
+}
+
+.header a:hover {
+ font-size: 1.1rem;
+ transition: all 0.4s linear;
+ letter-spacing: 0.5em;
+ padding: 4px 0 0 5px;
+}
+
+section {
+ position: relative;
+ display: flex;
+ width: 100%;
+ min-height: 100vh;
+ flex-flow: column-wrap;
+ align-items: center;
+ justify-content: center;
+ font-size: 1rem;
+ background-color: #f4f4f4;
+ background-image: url(thumbnails/winter-background.jpeg);
+}
+
+section h2 {
+ text-transform: uppercase;
+ font-size: 2.25rem;
+ font-weight: 900;
+ padding: 0.5em 1em;
+ color: #000;
+ background-color: aquamarine;
+ mix-blend-mode: screen;
+ border-radius: 0.25em;
+user-select: none;
+mix-blend-mode: luminosity;
+}
+section h2:hover {
+ text-transform: uppercase;
+ font-size: 2.25rem;
+ font-weight: 900;
+ padding: 0.5em 1em;
+color: aquamarine;
+ mix-blend-mode: screen;
+ border-radius: 0.25em;
+user-select: none;
+mix-blend-mode: luminosity;
+opacity: 0.1;
+}
+
+section:nth-child(2) {
+ background-image: url(thumbnails/spring-background.jpeg);
+ width: 100%;
+}
+section:nth-child(3) {
+ background-image: url(thumbnails/summer-background2.jpeg);
+ width: 100%;
+}
+
+section:nth-child(4) {
+ background-image: url(thumbnails/fall-background2.jpg);
+ width: 100%;
+}
+
+.spring {
+ background: url(./thumbnails/spring-background.jpeg);
+ width: 200px;
+ border: 0;
+}
+.summer {
+ background: url(./thumbnails/summer-background2.jpeg);
+ width: 200px;
+ border: 0;
+}
+.fall {
+ background: url(./thumbnails/fall-background2.jpg);
+ width: 200px;
+ border: 0; 
+}
+.winter {
+ background: url(./thumbnails/winter-background.jpeg)
+}
