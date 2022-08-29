@@ -91,7 +91,7 @@ section {
  justify-content: center;
  font-size: 1rem;
  background-color: #f4f4f4;
- background-image: url(winter-background.jpeg);
+ background-image: url(./winter-background.jpeg);
 }
 
 section h2 {
@@ -120,34 +120,34 @@ opacity: 0.1;
 }
 
 section:nth-child(2) {
- background-image: url(spring-background.jpeg);
+ background-image: url(./spring-background.jpeg);
  width: 100%;
 }
 section:nth-child(3) {
- background-image: url(summer-background2.jpeg);
+ background-image: url(./summer-background2.jpeg);
  width: 100%;
 }
 
 section:nth-child(4) {
- background-image: url(fall-background2.jpg);
+ background-image: url(./fall-background2.jpg);
  width: 100%;
 }
 
 .spring {
- background: url(spring-background.jpeg);
+ background: url(./spring-background.jpeg);
  width: 200px;
  border: 0;
 }
 .summer {
- background: url(summer-background2.jpeg);
+ background: url(./summer-background2.jpeg);
  width: 200px;
  border: 0;
 }
 .fall {
- background: url(fall-background2.jpg);
+ background: url(./fall-background2.jpg);
  width: 200px;
  border: 0; 
 }
 .winter {
- background: url(winter-background.jpeg)
+ background: url(./winter-background.jpeg)
 }
